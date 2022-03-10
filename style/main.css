@@ -1,9 +1,141 @@
+
+/* body= pantalla
+    los colores se pueden representar:
+     * con su nomnre en inglés  --> NO LO USAMOS nunca de los jamases
+     * rgb (255,255,255)        --> NO SE USA
+     * hexadecimal #2BaD4t      --> 2º opción
+     * hsl  hsl(226 63% 45%)    --> 1ª opción
+
+
+      ---------------- ETIQUETAS DE LAS PROPIEDADES DE ESTILO DE LAS CAJAS -------------
+
+     background-color   = color de fondo
+            border      = marco
+            margin      = margen  externo
+            padding     = margen interno
+            position    = 
+            z-index     = profundidad
+
+    ---------------------- MANERAS DE DEFINIR TAMAÑOS ----------------------------------
+    ------------------------------------------------------------------------------------
+
+    1. POR PIXELES = px no usa/ no se ajusta a todas las pantall
+
+    2. UNIDADES DE MEDIDA RELATIVAS A LA PANTALLA
+        /em/
+        rem/ es el más conveniente 
+                    arriba  drch   abajo    izq             
+            margin:  1em    2em     1em     4em
+
+                   arriba y abajo     izq y drch
+            margin:     1em             0em
+
+                    los 4 lados        
+            margin:     3em
+
+        auto sirve para centra
+
+            margin: 1rem auto
+        
+        se puede usar para 
+
+            + tamaño
+                    del texto
+                    del borde
+                    del borde  
+                    del magen
+                    del padding
+   
+    3. Porcentaje se usa para   
+                    +tamaño 
+                        100%  para el ancho
+                        100vh para la altura
+                           
+
+
+------------------ ETIQUETAS PARA TEXTO-------------------------------
+    
+                * COLOR         = color
+                * TOPOGRAFÍA    = font-family
+                * TAMAÑO        = fotn-size: 5rem
+                * GROSOR        = font-weigth: 400 texto normal; 
+                * DECORACIÓN    = text-decotartion: none
+                *alineación     = text-aling: left, rigth, ...
+
+    ------------------ ETIQUETAS PARA IMÁGENES -------------------------------            
+
+                                .logo{
+                                    max-width: 100%;
+                                }
+        Todas las imágenes estarán metidas en una caja. Por tanto todas las imagenes
+        se programarán para que ocupen el 100% del ancho de la caja
+
+                            .logo svg{
+                                heigth: 3rem
+                                width:  3rem
+                            }
+
+        A todos los svg hay que darles ancho y alto, 
+        si no les das altura y amplitud no paracen en la imagen.
+
+        Aun svg se la color con la propiedad "fill:" en el path
+                            
+                                .logo svg path{
+                                    fill:hsl(19, 100%, 50%)
+                                    transition
+         
+        Pseudoclases: 
+
+        los ":" condicionan la accion que realizará el elemneto, afinan el CSS  
+        
+        
+-----------------------------------   @media  -----------------------------------
+                                    
+             @media min-width: 1920px para TV 
+             @media max-width: 1024px para Tablet
+             @media max-width:  479px para móvil
+
+        Todo lo que se ponga dentro de "@media" afecta al tipo de pantalla en la que se va a ver.
+
+-----------------------------------  CSS grid o flex ------------------------------------
+
+
+Sino haces nada cada caja se coloca en la siguiente línea. Para poder ponerlas en una parrrila se utiliza la 
+funcionalidad grid o flex
+Al <div> que contiene el restos de cajas se le da la fincionalidad grid o flex
+
+     grid mejor usarlo para         .crud__table-grid{
+     páginas tipo colage                display: grid;
+                                        grid-template-colums: 25% 25% 25% 25%
+                                        grid-gap: 0.5
+                                    }
+
+                                    .crud__table-flex{
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        gap: 0.5em;                                        
+                                    }
+
+                                    .crud__table_flex-element{
+                                        flex-basis: 25%
+
+                    el combo que siempre se va a utilizar es 
+
+                                    display: flex;                                
+                                    justify-content: space-between
+
+
+
+
+     */
+
+
 /*====================
-=======Structure======
+====== Structure =====
 ======================*/
 
 body{
-    background-color: hsl(226 63% 45%);
+    background-color: hsl(226 63% 45%);                 
     display:flex; 
     flex-direction:column;    
     margin: 1em auto;
@@ -28,7 +160,7 @@ footer{
 }
 
 /*====================
-======Typography======
+===== Typography =====
 ======================*/
 
 h1, h2, h3, h4, h5, h6, a, p{
@@ -54,7 +186,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 600;
     text-decoration: none;
 }
@@ -80,7 +212,7 @@ a:focus, a:hover {
 }
 
 /*====================
-========Image=========
+======= Image ========
 ======================*/
 
 img {
@@ -88,7 +220,7 @@ img {
 }
 
 /*====================
-========Logo=========
+======= Logo ========
 ======================*/
 
 .logo{
@@ -105,7 +237,7 @@ img {
 }
 
 /*====================
-========Title=========
+======= Title ========
 ======================*/
 
 .title{
@@ -117,7 +249,7 @@ img {
 }
 
 /*====================
-========Subtitle======
+======= Subtitle =====
 ======================*/
 
 .subtitle{
@@ -132,7 +264,7 @@ img {
 }
 
 /*====================
-=========CRUD=========
+======== CRUD ========
 ======================*/
 
 .crud{

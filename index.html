@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <!-- para que sea escalable y se adapte a todas las pantallas -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- para ubicar la imgen de la pestaña del navegador -->
+        <!-- para ubicar la imgen de la pestaña del navegador  href: hypervincle reference-->
 		<link rel="shortcut icon" href="https://www.youtube.com/s/desktop/12d6b690/img/favicon.ico">
 
         <!-- tituto de la página 
@@ -29,7 +29,8 @@
                 en este caso se escribiria .logo .   
                     <id>> se utiliza de igual forma que logo. <class> se utiliza para nombrar varias cajas, 
                         <id>la reservamos para cajas que con las que se puedan interACtuar de forma concreta
-                             (EJEMPLO UN BOTÓN) CUANDO SE UTLIZA </id> en el estilo de CSS nos referimos a el con #logo  --> 
+                             (EJEMPLO UN BOTÓN) 
+                             CUANDO SE UTLIZA </id> en el estilo de CSS nos referimos a el con #logo  --> 
             <div class="logo">
                     <!-- El tipo de imagen que se utilizan para logotipos son vectoriales. se nombran con svg -->
                 <svg viewbox="0 0 24 24">
@@ -60,54 +61,13 @@
            <h2>Subtítulo</h2>
                 
          </div>
-
+                <!-- IMG= fotos= webp/jpg2000
+                            src= valor del atributo de -->
             <div class="crud">
                 <div class="crud__table">
-                    <div class="crud__table-grid">
-                        <div class="crud__table-grid-element">
-                            <!-- IMG= fotos= webp/jpg2000
-                            src= valor del atributo de -->
-                            <img src="images/1.jpg" alt="ardillas">
-                        </div>
-
-                        <div class="crud__table-grid-element">
-                            <img src="images/2.jpg" alt="ardillas">
-                        </div>
-
-                        <div class="crud__table-grid-element">
-                            <img src="images/3.jpg" alt="ardillas">
-                        </div>
-
-                        <div class="crud__table-grid-element">
-                            <img src="images/4.jpg" alt="ardillas">
-                        </div>
-
-                        <div class="crud__table-grid-element">
-                            <img src="images/5.jpg" alt="ardillas">
-                        </div>
-                    </div>
-    
-                    <div class="crud__table-flex">
-                        <div class="crud__table-flex-element">
-                            <img src="images/1.jpg" alt="ardillas">
-                        </div>
-
-                        <div class="crud__table-flex-element">
-                            <img src="images/2.jpg" alt="ardillas">
-                        </div>
-
-                        <div class="crud__table-flex-element">
-                            <img src="images/3.jpg" alt="ardillas">
-                        </div>
-
-                        <div class="crud__table-flex-element">
-                            <img src="images/4.jpg" alt="ardillas">
-                        </div>
-
-                        <div class="crud__table-flex-element">
-                            <img src="images/5.jpg" alt="ardillas">
-                        </div>
-                    </div>
+                    
+                    
+                    
                 </div>
 
                         <!-- form= formulario
@@ -115,18 +75,37 @@
                 <div class="crud__form">
                     <form class="crud__admin-form" id="crud__user-form" action="/users/create" autocomplete="off"> 
                         <div class="crud__form-element">
-                            <div class="crud__form-label">
-                                
+                            <div class="crud__form-label">                                
                                 <label for="name">Nombre</label>
+                            </div>
+
+                            <div>
+                                <table>
+                                    <tr>
+                                      <th>Company</th>
+                                      <th>Contact</th>
+                                      <th>Country</th>
+                                    </tr>
+                                    <tr>
+                                      <td>Alfreds Futterkiste</td>
+                                      <td>Maria Anders</td>
+                                      <td>Germany</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Centro comercial Moctezuma</td>
+                                      <td>Francisco Chang</td>
+                                      <td>Mexico</td>
+                                    </tr>
+                                  </table>
                             </div>
 
                             <div class="crud__form-input">
                                 <input type="text" name="name">
                             </div>
                         </div>
+                            
 
                         <div class="crud__form-element">    
-                            <!-- button = boton -->
                             <button class="crud__store-button">Guardar</button>
                         </div>
                     </form>
@@ -163,7 +142,7 @@
         li. = igual para cada punto de la LISTA
     
         video. =  video
-<a> enlace de la imagen-->
+        <a> para poner un enlace-->
     <!-- material.io/design guia de estilo de GOOGLE PARA DISEÑO DE LA WEB(tipografia/paletas de colores/...) 
          UX = USER EXPERIENCE  transiciones de las diferentes partes de la web -->
     <!-- UX = -->
